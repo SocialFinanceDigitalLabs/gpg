@@ -1,0 +1,10 @@
+{
+  "name": "setup-pgp",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "cd client && npm install && cd ../",
+    "build:client": "cd client && npm run build && cd ../",
+    "docker:build": "docker build -t sfdl/pgp .",
+    "docker:push": "docker push sfdl/pgp"
+  }
+}
